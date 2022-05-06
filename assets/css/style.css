@@ -127,26 +127,104 @@ section:nth-of-type(1) {
 
 h3 {
     font-size: 5em;
-    width: 23%;
-    margin: 0 30% 0;
-    padding: 40vh 0 0;
+    width: 100%;
+    /* margin: 0 30% 0; */
+    padding: 0 10% 0; 
 }
 
 section:nth-of-type(1) p {
-    width: 30%;
-    margin: 0 30% 0;
-    padding: 0 0 30vh;
+    /* width: 30%; */
+    margin: 0 0 0 12%;
+    /* padding: 0 0 30vh; */
 }
 
-.images {
+.gridImages {
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(40, 5%);
+}
 
+.gridImages img {
+    width: 100%;
+}
+
+.row1 {
+    grid-column-start: 1;
+    grid-column-end: 21;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: #000;
 }
 
 .image1 {
-    background: url("../img/action1.jpeg") ;
-    z-index: 999;
-    width: 50%;
-    height: 50%;
+    grid-column-start: 15;
+    grid-column-end: 20;
+    grid-row-start: 1;
+    grid-row-end: 5; /* done */
+}
+
+.image2 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 11; /* done */
+}
+
+.h3 {
+    grid-column-start: 9;
+    grid-column-end: 15;
+    grid-row-start: 9;
+    grid-row-end: 10; /* done */
+}
+
+.p1 {
+    grid-column-start: 9;
+    grid-column-end: 14;
+    grid-row-start: 11;
+    grid-row-end: 13;
+}
+
+.image3 {
+    grid-column-start: 17;
+    grid-column-end: 21;
+    grid-row-start: 14;
+    grid-row-end: 18; /* done */
+}
+
+.image4 {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 18;
+    grid-row-end: 22;
+}
+
+.image5 {
+    grid-column-start: 13;
+    grid-column-end: 19;
+    grid-row-start: 21;
+    grid-row-end: 25;
+}
+
+.image6 {
+    grid-column-start: 1; /* so lassen */
+    grid-column-end: 6; /* so lassen */
+    grid-row-start: 26;
+    grid-row-end: 30;
+}
+
+.image7 {
+    grid-column-start: 12; /* so lassen */
+    grid-column-end: 18; /* so lassen */
+    grid-row-start: 32;
+    grid-row-end: 36; 
+}
+
+.row1 {
+    grid-column-start: 1;
+    grid-column-end: 21;
+    grid-row-start: 40;
+    grid-row-end: 41;
+    background: #000;
 }
 
 /*===========================*/
@@ -230,6 +308,17 @@ section:nth-of-type(3) p {
 /* POSTER- & ROSEBEAR IMAGE */
 section:nth-of-type(4) img {
     width: 100%;
+}
+
+/* SECTION CIRCLE */
+
+.circle {
+    background: url("../img/cc-circle-2.png") 50% no-repeat;
+    height: 50vh;
+}
+
+.circle div img {
+    width: 50%;
 }
 
 /*========================== FOOTER ==========================*/
