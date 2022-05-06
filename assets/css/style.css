@@ -160,71 +160,78 @@ section:nth-of-type(1) p {
     grid-column-start: 15;
     grid-column-end: 20;
     grid-row-start: 1;
-    grid-row-end: 5; /* done */
+    grid-row-end: 5; 
 }
 
 .image2 {
     grid-column-start: 2;
     grid-column-end: 7;
-    grid-row-start: 7;
-    grid-row-end: 11; /* done */
+    grid-row-start: 5;
+    grid-row-end: 9; 
 }
 
 .h3 {
     grid-column-start: 9;
     grid-column-end: 15;
-    grid-row-start: 9;
-    grid-row-end: 10; /* done */
+    grid-row-start: 7;
+    grid-row-end: 8; 
 }
 
 .p1 {
     grid-column-start: 9;
     grid-column-end: 14;
-    grid-row-start: 11;
+    grid-row-start: 9;
     grid-row-end: 13;
 }
 
 .image3 {
     grid-column-start: 17;
     grid-column-end: 21;
-    grid-row-start: 14;
-    grid-row-end: 18; /* done */
+    grid-row-start: 10;
+    grid-row-end: 11; 
 }
 
 .image4 {
     grid-column-start: 4;
-    grid-column-end: 10;
-    grid-row-start: 18;
-    grid-row-end: 22;
+    grid-column-end: 8;
+    grid-row-start: 12;
+    grid-row-end: 13;
 }
 
 .image5 {
     grid-column-start: 13;
     grid-column-end: 19;
-    grid-row-start: 21;
-    grid-row-end: 25;
+    grid-row-start: 14;
+    grid-row-end: 15;
+}
+
+.p2 {
+    grid-column-start: 9;
+    grid-column-end: 14;
+    grid-row-start: 18;
+    grid-row-end: 19;
 }
 
 .image6 {
-    grid-column-start: 1; /* so lassen */
-    grid-column-end: 6; /* so lassen */
-    grid-row-start: 26;
-    grid-row-end: 30;
+    grid-column-start: 1; 
+    grid-column-end: 4; 
+    grid-row-start: 18;
+    grid-row-end: 19;
 }
 
 .image7 {
-    grid-column-start: 12; /* so lassen */
-    grid-column-end: 18; /* so lassen */
-    grid-row-start: 32;
-    grid-row-end: 36; 
+    grid-column-start: 12; 
+    grid-column-end: 17; 
+    grid-row-start: 20;
+    grid-row-end: 21; 
 }
 
 .row1 {
     grid-column-start: 1;
     grid-column-end: 21;
-    grid-row-start: 40;
-    grid-row-end: 41;
-    background: #000;
+    grid-row-start: 21;
+    grid-row-end: 22;
+    background: #fff;
 }
 
 /*===========================*/
@@ -236,33 +243,31 @@ section:nth-of-type(2) {
     display: flex;
 }
 
-/* 001 / 002 */
-section:nth-of-type(2) div:nth-of-type(1) figcaption:nth-of-type(1),
-section:nth-of-type(3) div:nth-of-type(1) figcaption:nth-of-type(1) {
-    margin: 20vh 5% 0;
+/* 001 */
+section:nth-of-type(2) div:nth-of-type(1) figcaption:nth-of-type(1) {
+    margin: 35vh 20% 0;
     color: red;
 }
 
 /* —ARTISTS */
 section:nth-of-type(2) div:nth-of-type(2) figcaption,
 section:nth-of-type(3) div:nth-of-type(2) figcaption {
-    margin: 0 0 20vh;
+    margin: 0 0 20vh 15%;
     color: blue;
 }
 
 h4 {
     font-size: 5em;
     width: 23%;
-    /* margin: 0 5% 0; */
-    padding: 0 0 10vh;
+    margin: 0 20% 0;
 }
 
 /* PARAGRAPH */
 section:nth-of-type(2) p {
     font-family: "LarishNeue1";
     font-size: 2em;
-    margin: 20vh 0 0;
-    width: 80%;
+    margin: 40vh 0 0 15%;
+    width: 75%;
 }
 
 /* FLEXBASIS */
@@ -282,11 +287,16 @@ section:nth-of-type(3) {
     display: flex;
 }
 
-h4 {
+section:nth-of-type(3) h4 {
     font-size: 5em;
     width: 23%;
-    margin: 0 5% 0;
-    padding: 0 0 10vh;
+    margin: 0 20% 0;
+} 
+
+
+section:nth-of-type(3) div:nth-of-type(1) figcaption:nth-of-type(1) {
+    margin: 20vh 20% 0;
+    color: orange;
 }
 
 section:nth-of-type(3) div:nth-of-type(1) {
@@ -301,8 +311,8 @@ section:nth-of-type(3) div:nth-of-type(2) {
 section:nth-of-type(3) p {
     font-family: "LarishNeue1";
     font-size: 2em;
-    margin: 20vh 0 0;
-    width: 80%;
+    margin: 20vh 0 0 15%;
+    width: 75%;
 }
 
 /* POSTER- & ROSEBEAR IMAGE */
