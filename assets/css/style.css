@@ -1,4 +1,4 @@
-/* @import */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400&display=swap');
 
 * {
     margin: 0;
@@ -9,14 +9,277 @@
 /*======================= GENERAL STYLES =======================
 
                     FONTS
+Font: WorkSans, LarishNeue
+font-family: 'Work Sans', sans-serif;
+font-family: "LarishNeue1";
+font-family: "LarishNeue2";
 
                     COLORS
-
+Farbe: #fff / #000
 ==============================================================*/
+
+body {
+    background: #000;
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+}
+
+figcaption {
+    font-family: 'Work Sans', sans-serif;
+}
+
+@font-face {
+    font-family: "LarishNeue1";
+    src: url("../fonts/LarishNeueSemibold.woff");
+}
+
+@font-face {
+    font-family: "LarishNeue2";
+    src: url("../fonts/Larish\ Neue\ Semibold.woff2");
+}
 /*============================================================*/
 
 /*========================== HEADER ==========================*/
 
+header {
+    background: #000;
+    color: #fff;
+}
+
+.line {
+    font-size: 10em;
+    font-weight: 100;
+    margin-top: -15vh;
+}
+
+h1, #textStroke {
+    font-size: 6em;
+}
+
+/* CALLING */
+#textStroke {
+    color: #000;
+    -webkit-text-stroke: 1px #fff;
+    line-height: 0.3em;
+}
+
+header div:nth-of-type(1) {
+    margin: 10vh 30%;
+    text-align: center;
+}
+
+header p {
+    margin-top: 5vh;
+}
+
+/* LOGO BEAR & RSVP BUTTON */
+header div:nth-of-type(2) {
+    width: 90%;
+    margin: 15vh 5% 20vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rsvp {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    border: 1px solid #fff;
+    padding: 2vh 2.5%;
+}
+
+.rsvp:hover {
+    background: #fff;
+    color: #000;
+    transition: all 1s ease;
+}
+
+h2 {
+    font-size: 7em;
+    font-family: "LarishNeue1";
+    width: 80%;
+    margin: 0 5% 2vh;
+}
+
+/* ASIDE */
+
+aside {
+    background: url("../img/map.svg") right no-repeat;
+}
+
+aside p {
+    margin: 0 5%;
+}
+
+aside p:nth-of-type(1) {
+    margin: 20vh 5% 0;
+}
+
 /*=========================== MAIN ===========================*/
 
+/* Stuck in the middle */
+section:nth-of-type(1) {
+    background: #fff;
+    color: #000;
+}
+
+h3 {
+    font-size: 5em;
+    width: 23%;
+    margin: 0 30% 0;
+    padding: 40vh 0 0;
+}
+
+section:nth-of-type(1) p {
+    width: 30%;
+    margin: 0 30% 0;
+    padding: 0 0 30vh;
+}
+
+/*===========================*/
+
+/* The Golden Bear */
+section:nth-of-type(2) {
+    background: #000;
+    color: #fff;
+    display: flex;
+}
+
+/* 001 / 002 */
+section:nth-of-type(2) div:nth-of-type(1) figcaption:nth-of-type(1),
+section:nth-of-type(3) div:nth-of-type(1) figcaption:nth-of-type(1) {
+    margin: 20vh 5% 0;
+    color: red;
+}
+
+/* —ARTISTS */
+section:nth-of-type(2) div:nth-of-type(2) figcaption,
+section:nth-of-type(3) div:nth-of-type(2) figcaption {
+    margin: 0 0 20vh;
+    color: blue;
+}
+
+h4 {
+    font-size: 5em;
+    width: 23%;
+    /* margin: 0 5% 0; */
+    padding: 0 0 10vh;
+}
+
+/* PARAGRAPH */
+section:nth-of-type(2) p {
+    font-family: "LarishNeue1";
+    font-size: 2em;
+    margin: 20vh 0 0;
+    width: 80%;
+}
+
+/* FLEXBASIS */
+section:nth-of-type(2) div:nth-of-type(1) {
+    flex-basis: 50%;
+}
+
+section:nth-of-type(2) div:nth-of-type(2) {
+    flex-basis: 50%;
+}
+
+/* The Poppy Bear */
+section:nth-of-type(3) {
+    background: #fff;
+    color: #000;
+    display: flex;
+}
+
+h4 {
+    font-size: 5em;
+    width: 23%;
+    margin: 0 5% 0;
+    padding: 0 0 10vh;
+}
+
+section:nth-of-type(3) div:nth-of-type(1) {
+    flex-basis: 50%;
+}
+
+section:nth-of-type(3) div:nth-of-type(2) {
+    flex-basis: 50%;
+}
+
+/* PARAGRAPH */
+section:nth-of-type(3) p {
+    font-family: "LarishNeue1";
+    font-size: 2em;
+    margin: 20vh 0 0;
+    width: 80%;
+}
+
 /*========================== FOOTER ==========================*/
+
+footer {
+    background: #000;
+    color: #fff;
+}
+
+footer figcaption {
+    margin: 20vh 5% 2vh;
+}
+
+footer p {
+    font-family: "LarishNeue1";
+    font-size: 2em;
+    margin: 0 5% 5vh;
+    width: 35%;
+}
+
+footer .rsvp {
+    margin: 0 5%;
+}
+
+footer nav {
+    font-family: 'Work Sans', sans-serif;
+    margin: 20vh 5% 5vh;
+    display: inline;
+}
+
+footer nav img {
+    width: 1%;
+    margin: 0 0.1%;
+}
+
+footer nav ul {
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+    line-height: 2em;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+}
+
+footer nav ul li {
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+}
+
+footer img {
+    width: 5%;
+    margin: 0 0.1%;
+}
+
+/* footer figure {
+    display: inline;
+    justify-content: space-between;
+    align-items: flex-end;
+} */
+
+footer div {
+    margin: 15vh 5% 20vh;
+    /* display: flex;
+    justify-content: space-between; */
+}
