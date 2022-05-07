@@ -49,7 +49,7 @@ header {
     background: url("../img/map.svg") right no-repeat;
     background-size: 35%;
     background-position: 85% 101%;
-    /* transform: rotate(15deg); */
+    /* transform: rotate(15deg); MAP? */
 }
 
 .line {
@@ -108,17 +108,11 @@ h2 {
 }
 
 /* ASIDE */
-
-aside {
-    /* background: url("../img/map.svg") right no-repeat;
-    background-size: 50%;
-    background-position: 100% 100%; */
-}
-
 aside p {
     margin: 0 5%;
 }
 
+/* WILDFIRES */
 aside p:nth-of-type(1) {
     margin: 20vh 5% 0;
 }
@@ -136,11 +130,6 @@ h3 {
     font-size: 5em;
     width: 95%;
 }
-
-/* section:nth-of-type(1) p {
-    width: 90%;
-} */
-
 
 .gridImages {
     display: grid;
@@ -207,15 +196,15 @@ h3 {
 .image5 {
     grid-column-start: 13;
     grid-column-end: 18;
-    grid-row-start: 14;
-    grid-row-end: 15;
+    grid-row-start: 15;
+    grid-row-end: 16;
 }
 
 .p2 {
     grid-column-start: 8;
     grid-column-end: 15;
-    grid-row-start: 18;
-    grid-row-end: 19;
+    grid-row-start: 19;
+    grid-row-end: 20;
     line-height: 2em;
     width: 83%;
 }
@@ -228,10 +217,10 @@ h3 {
 }
 
 .image7 {
-    grid-column-start: 12; 
-    grid-column-end: 17; 
-    grid-row-start: 20;
-    grid-row-end: 21; 
+    grid-column-start: 10; 
+    grid-column-end: 16; 
+    grid-row-start: 22;
+    grid-row-end: 22; 
     position: relative;
 }
 
@@ -239,7 +228,7 @@ h3 {
     grid-column-start: 1;
     grid-column-end: 21;
     grid-row-start: 21;
-    grid-row-end: 22;
+    grid-row-end: 24;
     background: #fff;
 }
 
@@ -249,6 +238,7 @@ section:nth-of-type(2) {
     background: #000;
     color: #fff;
     display: flex;
+    margin-top: 30vh;
 }
 
 /* 001 */
@@ -259,7 +249,7 @@ section:nth-of-type(2) div:nth-of-type(1) figcaption:nth-of-type(1) {
 /* —ARTISTS */
 section:nth-of-type(2) div:nth-of-type(2) figcaption,
 section:nth-of-type(4) div:nth-of-type(2) figcaption {
-    margin: 0 0 20vh 15%;
+    margin: 0 0 20vh;
 }
 
 /* THE GOLDEN BEAR */
@@ -273,15 +263,12 @@ h4 {
 section:nth-of-type(2) p {
     font-family: "LarishNeue1";
     font-size: 2em;
-    margin: 35vh 0 0 15%;
+    margin: 35vh 0 0 0%;
     width: 75%;
 }
 
 /* FLEXBASIS */
-section:nth-of-type(2) div:nth-of-type(1) {
-    flex-basis: 50%;
-}
-
+section:nth-of-type(2) div:nth-of-type(1),
 section:nth-of-type(2) div:nth-of-type(2) {
     flex-basis: 50%;
 }
@@ -325,6 +312,7 @@ section:nth-of-type(2) div:nth-of-type(2) {
     z-index: 999;
 }
 
+/* rotierender Kreis */
 .circle {
     grid-column-start: 18;
     grid-column-end: 21;
@@ -344,7 +332,6 @@ section:nth-of-type(2) div:nth-of-type(2) {
     }
 }
 
-
 .goldenRow2 {
     grid-column-start: 1;
     grid-column-end: 21;
@@ -356,7 +343,6 @@ section:nth-of-type(2) div:nth-of-type(2) {
 /*=== The Poppy Bear ====*/
 section:nth-of-type(4) {
     background: #fff;
-    /* background: url("../img/cc-circle-2.png"); */
     color: #000;
     display: flex;
 }
@@ -364,18 +350,14 @@ section:nth-of-type(4) {
 section:nth-of-type(4) h4 {
     font-size: 5em;
     width: 23%;
-    margin: 0 20% 0;
+    margin: 0 20%;
 } 
 
-
 section:nth-of-type(4) div:nth-of-type(1) figcaption:nth-of-type(1) {
-    margin: 20vh 20% 0;
+    margin: 0 20% 0;
 }
 
-section:nth-of-type(4) div:nth-of-type(1) {
-    flex-basis: 50%;
-}
-
+section:nth-of-type(4) div:nth-of-type(1),
 section:nth-of-type(4) div:nth-of-type(2) {
     flex-basis: 50%;
 }
@@ -384,7 +366,7 @@ section:nth-of-type(4) div:nth-of-type(2) {
 section:nth-of-type(4) p {
     font-family: "LarishNeue1";
     font-size: 2em;
-    margin: 20vh 0 0 15%;
+    margin-right: 15%;
     width: 75%;
 }
 
@@ -399,7 +381,7 @@ section:nth-of-type(5) img {
 
 /*========================== FOOTER ==========================*/
 .bruceBanner {
-    background: yellow;
+    background: #fff;
     color: #000;
     font-size: 15vh;
     width: 110%;
@@ -411,6 +393,7 @@ section:nth-of-type(5) img {
     animation: run 5s linear infinite;
 }
 
+/* YEAR */
 .bruceBanner span {
         color: #fff;
         -webkit-text-stroke: 1px #000;
@@ -418,16 +401,26 @@ section:nth-of-type(5) img {
 }
 
 @keyframes run {
-    0%   {left: 0px;}
+    /* 0%   {left: 0px;}
     50% {right: 200px;}
-    100% {right: 200px;}
+    100% {right: 200px;} */
+    0%, 5%, 95%, 100% {
+        left: 0%;
+        transform: translate(0, 0);
+        /* transform: rotate(45deg); */
+    }
+    45%, 55% {
+        left: 100%;
+        transform: translate(-100%, 0);
+        /* transform: rotate(45deg); */
+    }
 }
 
 footer {
     background: #000;
     color: #fff;
     width: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 /* JOIN US */
@@ -465,7 +458,6 @@ footer nav img {
 
 footer nav ul {
     text-decoration: none;
-    color: #fff;
     list-style: none;
     line-height: 2em;
 }
@@ -478,15 +470,10 @@ footer nav a {
 
 footer nav ul li {
     text-decoration: none;
-    color: #fff;
     list-style: none;
 }
 
 /* SFDW, ARD*/
-/* footer figure {
-    margin: 0 0 0;
-} */
-
 footer figure img {
     width: 20%;
 }
@@ -512,6 +499,11 @@ footer figure img {
         font-size: 2em;
     }
 
+    /* WILDFIRES */
+    aside p:nth-of-type(1) {
+        margin: 0 5% 0;
+    }
+
     /* STUCK IN THE MIDDLE */
     .row1 {
         background: #fff;
@@ -524,32 +516,37 @@ footer figure img {
         grid-row-end: 23;
         background: #000;
     }
+
+    h3 {
+        width: 100%;
+    }
+
     .h3 {
-    font-size: 0.5em;
-    grid-column-start: 8;
-    grid-column-end: 13;
-    grid-row-start: 5;
-    grid-row-end: 8;
+        font-size: 0.5em;
+        grid-column-start: 6;
+        grid-column-end: 20;
+        grid-row-start: 2;
+        grid-row-end: 9;
     }
 
     .p1, .p2 {
         font-size: 1em;
-        line-height: 1em;
+        line-height: 1.5em;
     }
 
     .p1 {
         margin: 15vh 0 0;
         grid-column-start: 6;
         grid-column-end: 21;
-        grid-row-start: 6;
+        grid-row-start: 1;
         grid-row-end: 8;
     }
 
     .p2 {
-        margin: 0 0;
+        margin-top: -2vh;
         grid-column-start: 6;
         grid-column-end: 21;
-        grid-row-start: 15;
+        grid-row-start: 12;
         grid-row-end: 17;
     }
 
@@ -603,20 +600,20 @@ footer figure img {
     }
 
     /* THE GOLDEN BEAR */
-    /* section:nth-of-type(2) {
-        margin-top: 0vh;
-    } */
+    section:nth-of-type(2) div:nth-of-type(1) figcaption:nth-of-type(1) {
+        margin-top: -20vh;
+    }
 
     h4 {
-    font-size: 2em;
-    width: 23%;
-    margin: 0 20% 0;
+        font-size: 2em;
+        width: 23%;
+        margin: 0vh 20% 0;
     }
 
     section:nth-of-type(2) p {
         font-family: "LarishNeue1";
         font-size: 1em;
-        margin: 35vh 0 0 15%;
+        margin-top: -20vh;
         width: 75%;
     }
 
@@ -627,15 +624,18 @@ footer figure img {
 
     section:nth-of-type(4) h4 {
         font-size: 2em;
-    width: 23%;
-    margin: 0 20% 0;
+        width: 23%;
+        margin: 0 20% 0;
     } 
 
     section:nth-of-type(4) p {
         font-family: "LarishNeue1";
         font-size: 1em;
-        margin: 20vh 0 0 15%;
         width: 75%;
+    }
+
+    .circle {
+        visibility: hidden;
     }
 
     /* FOOTER */
