@@ -224,9 +224,10 @@ section:nth-of-type(1) p {
     grid-column-end: 17; 
     grid-row-start: 20;
     grid-row-end: 21; 
+    position: relative;
 }
 
-.row1 {
+.row2 {
     grid-column-start: 1;
     grid-column-end: 21;
     grid-row-start: 21;
@@ -251,7 +252,7 @@ section:nth-of-type(2) div:nth-of-type(1) figcaption:nth-of-type(1) {
 
 /* —ARTISTS */
 section:nth-of-type(2) div:nth-of-type(2) figcaption,
-section:nth-of-type(3) div:nth-of-type(2) figcaption {
+section:nth-of-type(4) div:nth-of-type(2) figcaption {
     margin: 0 0 20vh 15%;
     color: blue;
 }
@@ -279,36 +280,82 @@ section:nth-of-type(2) div:nth-of-type(2) {
     flex-basis: 50%;
 }
 
+/*========== GOLDEN GRID ===========*/
+
+.gridGolden {
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+}
+
+.gridGolden img {
+    width: 100%;
+}
+
+.goldenRow1 {
+    grid-column-start: 1;
+    grid-column-end: 21;
+    grid-row-start: 1;
+    grid-row-end: 17;
+    background: #000;
+}
+
+/* Bear with flower */
+.Bear1 {
+    grid-column-start: 3;
+    grid-column-end: 15;
+    grid-row-start: 2;
+    grid-row-end: 12; 
+    position: relative;
+}
+
+/* Bear pins */
+.Bear2 {
+    grid-column-start: 14;
+    grid-column-end: 19;
+    grid-row-start: 8;
+    grid-row-end: 10; 
+    position: relative;
+}
+
+.goldenRow2 {
+    grid-column-start: 1;
+    grid-column-end: 21;
+    grid-row-start: 17;
+    grid-row-end: 22;
+    background: #fff;
+}
+
 /* The Poppy Bear */
-section:nth-of-type(3) {
+section:nth-of-type(4) {
     background: #fff;
     /* background: url("../img/cc-circle-2.png"); */
     color: #000;
     display: flex;
 }
 
-section:nth-of-type(3) h4 {
+section:nth-of-type(4) h4 {
     font-size: 5em;
     width: 23%;
     margin: 0 20% 0;
 } 
 
 
-section:nth-of-type(3) div:nth-of-type(1) figcaption:nth-of-type(1) {
+section:nth-of-type(4) div:nth-of-type(1) figcaption:nth-of-type(1) {
     margin: 20vh 20% 0;
     color: orange;
 }
 
-section:nth-of-type(3) div:nth-of-type(1) {
+section:nth-of-type(4) div:nth-of-type(1) {
     flex-basis: 50%;
 }
 
-section:nth-of-type(3) div:nth-of-type(2) {
+section:nth-of-type(4) div:nth-of-type(2) {
     flex-basis: 50%;
 }
 
 /* PARAGRAPH */
-section:nth-of-type(3) p {
+section:nth-of-type(4) p {
     font-family: "LarishNeue1";
     font-size: 2em;
     margin: 20vh 0 0 15%;
@@ -316,7 +363,7 @@ section:nth-of-type(3) p {
 }
 
 /* POSTER- & ROSEBEAR IMAGE */
-section:nth-of-type(4) img {
+section:nth-of-type(5) img {
     width: 100%;
 }
 
