@@ -46,6 +46,10 @@ figcaption {
 header {
     background: #000;
     color: #fff;
+    background: url("../img/map.svg") right no-repeat;
+    background-size: 35%;
+    background-position: 85% 101%;
+    /* transform: rotate(15deg); */
 }
 
 .line {
@@ -106,7 +110,9 @@ h2 {
 /* ASIDE */
 
 aside {
-    background: url("../img/map.svg") right no-repeat;
+    /* background: url("../img/map.svg") right no-repeat;
+    background-size: 50%;
+    background-position: 100% 100%; */
 }
 
 aside p {
