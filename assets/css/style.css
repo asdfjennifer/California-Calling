@@ -243,9 +243,8 @@ h3 {
     background: #fff;
 }
 
-/*===========================*/
+/*=== The Golden Bear ====*/
 
-/* The Golden Bear */
 section:nth-of-type(2) {
     background: #000;
     color: #fff;
@@ -255,16 +254,15 @@ section:nth-of-type(2) {
 /* 001 */
 section:nth-of-type(2) div:nth-of-type(1) figcaption:nth-of-type(1) {
     margin: 35vh 20% 0;
-    color: red;
 }
 
 /* —ARTISTS */
 section:nth-of-type(2) div:nth-of-type(2) figcaption,
 section:nth-of-type(4) div:nth-of-type(2) figcaption {
     margin: 0 0 20vh 15%;
-    color: blue;
 }
 
+/* THE GOLDEN BEAR */
 h4 {
     font-size: 5em;
     width: 23%;
@@ -275,7 +273,7 @@ h4 {
 section:nth-of-type(2) p {
     font-family: "LarishNeue1";
     font-size: 2em;
-    margin: 40vh 0 0 15%;
+    margin: 35vh 0 0 15%;
     width: 75%;
 }
 
@@ -310,8 +308,8 @@ section:nth-of-type(2) div:nth-of-type(2) {
 
 /* Bear with flower */
 .Bear1 {
-    grid-column-start: 3;
-    grid-column-end: 15;
+    grid-column-start: 2;
+    grid-column-end: 14;
     grid-row-start: 2;
     grid-row-end: 12; 
     position: relative;
@@ -319,22 +317,43 @@ section:nth-of-type(2) div:nth-of-type(2) {
 
 /* Bear pins */
 .Bear2 {
-    grid-column-start: 14;
+    grid-column-start: 13;
     grid-column-end: 19;
-    grid-row-start: 8;
-    grid-row-end: 10; 
+    grid-row-start: 6;
+    grid-row-end: 12; 
     position: relative;
+    z-index: 999;
 }
+
+.circle {
+    grid-column-start: 18;
+    grid-column-end: 21;
+    grid-row-start: 13;
+    grid-row-end: 21; 
+    position: relative; /* Größe so lassen!!! */
+}
+
+.circle img {
+    width: 150%; /* Größe so lassen!!! */
+    animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 .goldenRow2 {
     grid-column-start: 1;
     grid-column-end: 21;
-    grid-row-start: 17;
+    grid-row-start: 14;
     grid-row-end: 22;
     background: #fff;
 }
 
-/* The Poppy Bear */
+/*=== The Poppy Bear ====*/
 section:nth-of-type(4) {
     background: #fff;
     /* background: url("../img/cc-circle-2.png"); */
@@ -351,7 +370,6 @@ section:nth-of-type(4) h4 {
 
 section:nth-of-type(4) div:nth-of-type(1) figcaption:nth-of-type(1) {
     margin: 20vh 20% 0;
-    color: orange;
 }
 
 section:nth-of-type(4) div:nth-of-type(1) {
@@ -371,21 +389,50 @@ section:nth-of-type(4) p {
 }
 
 /* POSTER- & ROSEBEAR IMAGE */
+section:nth-of-type(5) {
+    z-index: 999999;
+    position: relative;
+}
 section:nth-of-type(5) img {
     width: 100%;
 }
 
 /*========================== FOOTER ==========================*/
+.bruceBanner {
+    background: yellow;
+    color: #000;
+    font-size: 15vh;
+    width: 110%;
+    transform: rotate(45deg);
+    position: relative;
+    top: 8vh;
+    /* left: 50%; */
+    left: 20%;
+    animation: run 5s linear infinite;
+}
+
+.bruceBanner span {
+        color: #fff;
+        -webkit-text-stroke: 1px #000;
+        line-height: 0.3em;
+}
+
+@keyframes run {
+    0%   {left: 0px;}
+    50% {right: 200px;}
+    100% {right: 200px;}
+}
 
 footer {
     background: #000;
     color: #fff;
     width: 100%;
+    /* overflow: hidden; */
 }
 
 /* JOIN US */
 footer figcaption {
-    margin: 20vh 5% 2vh;
+    margin: 0 5% 2vh;
 }
 
 footer p {
@@ -436,10 +483,176 @@ footer nav ul li {
 }
 
 /* SFDW, ARD*/
-footer figure {
-    margin: 0 -10% 0;
-}
+/* footer figure {
+    margin: 0 0 0;
+} */
 
 footer figure img {
     width: 20%;
+}
+
+/*========================== MEDIA QUERIES ==========================*/
+
+@media only screen and (max-width: 600px) {
+
+    .line {
+        visibility: hidden;
+    }
+
+    h1, #textStroke {
+        font-size: 4em;
+    }
+
+    header div:nth-of-type(1) {
+        margin: -10vh 5%;
+    }
+
+    /* HEADER LAST YEAR / FACTS */
+    h2 {
+        font-size: 2em;
+    }
+
+    /* STUCK IN THE MIDDLE */
+    .row1 {
+        background: #fff;
+    }
+
+    .row2 {
+        grid-column-start: 1;
+        grid-column-end: 21;
+        grid-row-start: 21;
+        grid-row-end: 23;
+        background: #000;
+    }
+    .h3 {
+    font-size: 0.5em;
+    grid-column-start: 8;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    }
+
+    .p1, .p2 {
+        font-size: 1em;
+        line-height: 1em;
+    }
+
+    .p1 {
+        margin: 15vh 0 0;
+        grid-column-start: 6;
+        grid-column-end: 21;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+
+    .p2 {
+        margin: 0 0;
+        grid-column-start: 6;
+        grid-column-end: 21;
+        grid-row-start: 15;
+        grid-row-end: 17;
+    }
+
+    .image1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+
+    .image2 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    .image3 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 7;
+        grid-row-end: 8;
+    }
+
+    .image4 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 10;
+        grid-row-end: 11;
+    }
+
+    .image5 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 13;
+        grid-row-end: 16;
+    }
+
+    .image6 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 16;
+        grid-row-end: 19;
+    }
+
+    .image7 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 19;
+        grid-row-end: 20;
+    }
+
+    /* THE GOLDEN BEAR */
+    /* section:nth-of-type(2) {
+        margin-top: 0vh;
+    } */
+
+    h4 {
+    font-size: 2em;
+    width: 23%;
+    margin: 0 20% 0;
+    }
+
+    section:nth-of-type(2) p {
+        font-family: "LarishNeue1";
+        font-size: 1em;
+        margin: 35vh 0 0 15%;
+        width: 75%;
+    }
+
+    /* POPPY BEAR */
+    section:nth-of-type(3) {
+        flex-wrap: wrap;
+    }
+
+    section:nth-of-type(4) h4 {
+        font-size: 2em;
+    width: 23%;
+    margin: 0 20% 0;
+    } 
+
+    section:nth-of-type(4) p {
+        font-family: "LarishNeue1";
+        font-size: 1em;
+        margin: 20vh 0 0 15%;
+        width: 75%;
+    }
+
+    /* FOOTER */
+    .bruceBanner {
+        visibility: hidden;
+    }
+
+    footer figcaption {
+        margin-top: -50vh;
+    }
+
+    footer p {
+        font-size: 1.5em;
+        width: 90%;
+    }
+
+    footer figure {
+        margin: 0 -50% 0 0;
+    }
 }
