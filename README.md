@@ -20,3 +20,5 @@ Viel Spaß, Jenni
 Vorschau:
 
 <img src="CaliforniaCalling.png"  title="CaliforniaCalling" alt="CaliforniaCalling"/>&nbsp;
+
+![Screenshot](CaliforniaCalling.png)
