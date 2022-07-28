@@ -15,10 +15,9 @@ Verwendete Technologien:
 
 Ergebnis: https://asdfjennifer.github.io/California-Calling/
 
-Viel Spaß, Jenni
+Viel Spaß damit 🐻
 
 Vorschau:
 
-<img src="CaliforniaCalling.png"  title="CaliforniaCalling" alt="CaliforniaCalling"/>&nbsp;
 
-![CaliforniaCalling](CaliforniaCalling.png)
+![Lev3_9_Project_css-vertiefung_california-calling (2)](https://user-images.githubusercontent.com/98667941/181461873-d07c7a78-7885-4139-8912-24f615ab6d9d.png)
